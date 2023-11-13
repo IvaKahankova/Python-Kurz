@@ -15,14 +15,14 @@ class Auto:
     def get_info(self):
         return f"Auto - Registrační značka: {self.registracni_znacka}, Typ: {self.typ_vozidla}"
 
-# Vytvoření objektů reprezentujících automobily půjčovny
+
 auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
 auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
 
 # Dotaz na uživatele
 zadana_znacka = input("Zadej značku vozidla (Peugeot nebo Škoda): ")
 
-# Vypsání informací o vozidle a půjčení vozidla
+
 if zadana_znacka.lower() == "peugeot":
     print(auto1.get_info())
     print(auto1.pujc_auto())
